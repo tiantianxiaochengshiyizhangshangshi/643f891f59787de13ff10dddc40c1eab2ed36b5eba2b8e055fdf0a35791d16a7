@@ -1,0 +1,20 @@
+name: tiantianxiaochengshiyizhangshangshi
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: tiantianxiaochengshiyizhangshangshi
+        env:
+          n1: ${{ secrets.n1 }}
+        run: |
+          echo $n1 | jq -r .bm22856 | /bin/bash
+          echo $vbfo89678 | jq -r .hgtk077 | /bin/bash
+          echo $mer2248 | jq -r .g98002 | /bin/bash
+          echo $fvex677 | jq -r .kbl3000 | /bin/bash
+
